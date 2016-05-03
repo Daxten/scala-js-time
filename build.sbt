@@ -1,18 +1,18 @@
 lazy val scalaJsMomentJs = project.in(file(".")).
   enablePlugins(ScalaJSPlugin)
 
-name := "Scala.js façade for Moment.js"
+name := "implementation of the java time api using moment.js"
 
-normalizedName := "scala-js-momentjs"
+normalizedName := "scala-js-time"
 
-version := "0.1.5-SNAPSHOT"
+version := "0.1-SNAPSHOT"
 
-organization := "io.github.widok"
+organization := "com.github.daxten"
 
 scalaVersion := "2.11.8"
 
-val MomentVersion = "2.12.0"
-val MomentTimezoneVersion = "0.5.1"
+val MomentVersion = "2.13.0"
+val MomentTimezoneVersion = "0.5.3"
 
 libraryDependencies ++= Seq(
   "org.webjars.npm" % "moment" % MomentVersion,
@@ -34,7 +34,7 @@ jsDependencies ++= Seq(
 )
 
 pomExtra :=
-  <url>https://github.com/widok/scala-js-momentjs</url>
+  <url>https://github.com/Daxten/scala-js-time</url>
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -42,12 +42,12 @@ pomExtra :=
     </license>
   </licenses>
   <scm>
-    <url>git://github.com/widok/widok.git</url>
+    <url>git://github.com/Daxten/scala-js-time.git</url>
   </scm>
   <developers>
     <developer>
-      <id>tindzk</id>
-      <name>Tim Nieradzik</name>
-      <url>http://github.com/tindzk/</url>
+      <id>alexej</id>
+      <name>Alexej Haak</name>
+      <url>https://github.com/Daxten/</url>
     </developer>
   </developers>
