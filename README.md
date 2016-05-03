@@ -1,26 +1,3 @@
-# Moment.js façade for Scala.js
+This is a best-effort implementation of the java time api using moment.js
 
-## Installation
-Add the following dependency to your `build.sbt`:
-
-```scala
-libraryDependencies +=
-  "io.github.widok" %%% "scala-js-momentjs" % "0.1.4"
-```
-
-## Example
-```scala
-import org.widok.moment._
-
-Moment.locale("en_GB")
-
-Moment().calendar()
-Moment(millis).calendar()
-Moment(millis).fromNow()
-```
-
-## License
-This façade is licensed under the terms of the Apache v2.0 license.
-
-## Authors
-* Tim Nieradzik
+It's not complete, you will get linking errors if you use the more fancy stuff. If something is missing I welcome pull requests
